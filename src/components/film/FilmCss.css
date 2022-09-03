@@ -1,0 +1,89 @@
+#filmItem {
+  background-color: #fafafa;
+}
+
+#filmItemImage {
+  height: 200px;
+}
+
+#ViewImagesFilm {
+  width: 100px;
+  height: 100px;
+  float: left;
+  padding: 5px;
+}
+
+#ImgComment {
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding: 5px;
+}
+
+#commentElement {
+  margin-top: 10px;
+}
+
+#commentName {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#commentDate {
+  font-size: 15px;
+}
+
+#commentText {
+  margin-top: -30px;
+  margin-left: 50px;
+}
+
+#ViewImagesFilm:hover {
+  border: 2px solid black;
+}
+
+#boxColor {
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+.rating {
+  float: left;
+  border: none;
+}
+.rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+.rating:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0 0.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 200%;
+  line-height: 1.2;
+  color: #ddd;
+}
+.rating:not(:checked) > label:before {
+  content: "★ ";
+}
+.rating > input:checked ~ label {
+  color: #f70;
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ea0;
+}
+.rating > label:active {
+  position: relative;
+}

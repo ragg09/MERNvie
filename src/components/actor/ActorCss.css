@@ -1,0 +1,23 @@
+#ViewImages {
+  width: 100%;
+  margin: 1px;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+#ViewImages:hover {
+  transition-delay: 5s;
+  transition: 0.7s;
+  transform: scale(4);
+  z-index: 10 !important;
+  position: absolute;
+}
+
+#boxColor {
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+p {
+  word-wrap: break-word;
+}
